@@ -145,6 +145,7 @@ func Slice(s string) (b []byte) {
   - array的每个元素都能用`==`比较时才可以比较；
 
 - panic恢复，`recover()`必须在defer函数或者语句中调用，否则无效
+
 ```go
 package main
 
