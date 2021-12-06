@@ -1,6 +1,6 @@
 ---
 titles: 
-  en      : &EN       Golang Basics
+  en      : &EN       Golang语言基础（面经）
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
