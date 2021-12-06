@@ -25,6 +25,7 @@ tags:
 ## 声明
 
 - 短变量声明只能在函数内部使用
+
 ```go
 package main
 
@@ -36,6 +37,7 @@ func main() {
 ```
 
 - 不能使用nil初始化未指定类型的变量
+
 ```go
 var x = nil // false
 var x interface{} = nil // right
@@ -43,6 +45,7 @@ _ = x
 ```
 
 - 字符串没有nil
+
 ```go
 var x string
 
@@ -70,6 +73,7 @@ arr := [3]int{1, 2, 3} // array
 
 空切片指向地址相同：
 ![Image](https://mmbiz.qpic.cn/mmbiz_png/FmVWPHrDdnmEnIljHLiaRm4UQYQugoxmeTsMB2g7bOhTvZmtR1BxqbRAMtPjZaLhUpHmMuItBiatVDCTLw1ejZxA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
 ```go
 arr := [3]int{1, 2, 4}
 var changeFirst = func(arr [3]int) {
@@ -91,6 +95,7 @@ fmt.Println(arr) // arr = {7, 2, 4}, will change arr
 ## 字符串
 
 - 字符串不可变，转换成[]byte数组时才可变
+
 ```go
 x := "text"
 // x[0] = 'T' // error
@@ -102,6 +107,7 @@ xBytes[0] = 'T' // no problem
 - 字符串与[]byte之间的转换是复制，有内存消耗，有两种方法可以做到
   1. map[string][]byte建立映射
   2. 使用range避免内存分配
+
 ```go
 stringToByte := make(map[string][]byte)
 str := "abc"
@@ -109,7 +115,9 @@ for i, v := range []byte(str) { // avoid memory allocation
   t.Logf("i, v: %+v, %+v\n", i, v) // 97, 98, 99
 }
 ```
+
 更安全的方式：
+
 ```go
 import (
     "reflect"
