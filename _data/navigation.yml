@@ -1,7 +1,7 @@
 header:
   - titles:
      # @start locale config
-      en      : &EN       MainPage
+      en      : &EN       Home
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
