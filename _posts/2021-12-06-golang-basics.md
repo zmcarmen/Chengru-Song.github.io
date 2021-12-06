@@ -1,14 +1,6 @@
 ---
-titles: 
-  en      : &EN       Golang语言基础（面经）
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  Golang语言基础（面经）
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
+layout: article
+title: Golang语言基础（面经）
 sidebar:
   nav: docs-ko
 aside:
